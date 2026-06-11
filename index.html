@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURIS — Immersive Sound Redefined</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">AURIS</a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta">Buy Now</button>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-video-wrap">
+      <video
+        id="hero-video"
+        src="assets/videos/intro.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+      ></video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- floating bloom particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">NEW ERA OF AUDIO</p>
+      <h1 class="hero-headline">Immersive Sound<br /><em>Redefined</em></h1>
+      <p class="hero-sub">
+        Experience premium audio engineered for those<br class="br-desk" />
+        who demand perfection.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Shop Now</a>
+        <a href="#features" class="btn btn-secondary">Explore Features</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FEATURES
+  ═══════════════════════════════════════════ -->
+  <section id="features" class="section-pad">
+    <div class="container">
+      <p class="section-eyebrow reveal">ENGINEERED EXCELLENCE</p>
+      <h2 class="section-title reveal">Built for Every<br /><em>Sonic Dimension</em></h2>
+
+      <div class="features-grid">
+
+        <div class="feature-card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M16 24c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 24c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Active Noise Cancellation</h3>
+          <p>Dual-microphone hybrid ANC eliminates up to 40 dB of ambient noise, placing you inside the music — no matter where you are.</p>
+          <span class="card-badge">ANC PRO</span>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="18" width="28" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M38 23h2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 18v-4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M18 27h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>40-Hour Battery Life</h3>
+          <p>A single charge powers 40 hours of playback. Ten-minute quick charge delivers 3 hours — because your music should never stop.</p>
+          <span class="card-badge">QUICK CHARGE</span>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8v32M16 14l8-6 8 6M16 34l8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 20c2.5-2 5.5-3 8-3M40 20c-2.5-2-5.5-3-8-3M8 28c2.5 2 5.5 3 8 3M40 28c-2.5 2-5.5 3-8 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Hi-Res Audio Quality</h3>
+          <p>Certified Hi-Res Audio with 40 mm beryllium-coated drivers. 20 Hz–40 kHz range delivers sound as the artist intended.</p>
+          <span class="card-badge">HI-RES</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PRODUCT SHOWCASE
+  ═══════════════════════════════════════════ -->
+  <section id="showcase" class="section-pad parallax-section">
+    <div class="container">
+      <p class="section-eyebrow reveal">THE OBJECT</p>
+      <h2 class="section-title reveal">Precision in<br /><em>Every Detail</em></h2>
+    </div>
+
+    <div class="showcase-grid">
+      <div class="glass-card reveal" data-delay="0">
+        <div class="glass-card-inner">
+          <div class="glass-stat">40mm</div>
+          <div class="glass-label">Beryllium Driver</div>
+        </div>
+      </div>
+      <div class="glass-card reveal" data-delay="100">
+        <div class="glass-card-inner">
+          <div class="glass-stat">−40dB</div>
+          <div class="glass-label">Noise Reduction</div>
+        </div>
+      </div>
+      <div class="glass-card reveal" data-delay="200">
+        <div class="glass-card-inner">
+          <div class="glass-stat">40hr</div>
+          <div class="glass-label">Battery Life</div>
+        </div>
+      </div>
+      <div class="glass-card reveal" data-delay="300">
+        <div class="glass-card-inner">
+          <div class="glass-stat">20Hz–<br/>40kHz</div>
+          <div class="glass-label">Frequency Range</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="showcase-centerpiece reveal">
+      <div class="centerpiece-ring"></div>
+      <div class="centerpiece-ring ring2"></div>
+      <p class="centerpiece-copy">
+        "Sound that doesn't ask for your attention<br />— it commands it."
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       REVIEWS
+  ═══════════════════════════════════════════ -->
+  <section id="reviews" class="section-pad">
+    <div class="container">
+      <p class="section-eyebrow reveal">TESTIMONIALS</p>
+      <h2 class="section-title reveal">Heard By<br /><em>Many. Loved By All.</em></h2>
+
+      <div class="reviews-grid">
+
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The ANC is genuinely supernatural. I can't hear my co-workers, my commute, or reality anymore. Pure bliss."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" data-initials="SR"></div>
+            <div>
+              <strong>Sophia Reeves</strong>
+              <span>Sound Engineer, London</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"40 hours on a single charge. I went on a camping trip and came back — still 60% left. This thing is a battery marvel."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" data-initials="MK"></div>
+            <div>
+              <strong>Marcus Kim</strong>
+              <span>Music Producer, Seoul</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The Hi-Res certification isn't marketing — you hear it immediately. Micro-details in my reference tracks I've never noticed before."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" data-initials="NP"></div>
+            <div>
+              <strong>Nadia Patel</strong>
+              <span>Classical Pianist, Vienna</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA BAND
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="cta-band section-pad">
+    <div class="container cta-inner">
+      <p class="section-eyebrow reveal">LIMITED EDITION</p>
+      <h2 class="section-title reveal">Ready to Hear<br /><em>the Difference?</em></h2>
+      <p class="cta-sub reveal">Free shipping · 30-day returns · 2-year warranty</p>
+      <a href="#" class="btn btn-primary btn-lg reveal">Buy Now</a>
+    </div>
+    <div class="cta-glow" aria-hidden="true"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="footer-logo">AURIS</a>
+      <ul class="footer-nav">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-social">
+        <!-- Instagram -->
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <!-- X / Twitter -->
+        <a href="#" aria-label="X">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <!-- YouTube -->
+        <a href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="5" width="20" height="14" rx="3"/>
+            <polygon points="10,9 16,12 10,15" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 AURIS Audio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
